@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for lower in range(97, 123):
-    if lower ! = 101 and lower  != 113:
-        print("{:c}".format(lower ), end="")
+for char in 'abcdefghijklmnopqrstuvwxyz':
+    if char not in 'qe':
+        print(char, end='')
