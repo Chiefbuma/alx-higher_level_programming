@@ -4,8 +4,8 @@ void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
 
 /**
- * print_python_list - Prints basic  lists.
- * @p: A PyObject list.
+ * print_python_list - Prints  lists.
+ * @p: A PyObject list object.
  */
 void print_python_list(PyObject *p)
 {
@@ -31,12 +31,12 @@ void print_python_list(PyObject *p)
 }
 
 /**
- * print_python_bytes - Prints byte objects.
- * @p: A PyObject object.
+ * print_python_bytes - Prints objects.
+ * @p: A PyObject byte object.
  */
 void print_python_bytes(PyObject *p)
 {
-        unsigned char k, size;
+        unsigned char i, size;
         PyBytesObject *bytes = (PyBytesObject *)p;
 
         printf("[.] bytes object info\n");
@@ -55,10 +55,10 @@ void print_python_bytes(PyObject *p)
                 size = ((PyVarObject *)p)->ob_size + 1;
 
         printf("  first %d bytes: ", size);
-        for (k = 0; k < size; i++)
+        for (i = 0; i < size; i++)
         {
-                printf("%02hhx", bytes->ob_sval[k]);
-                if (k == (size - 1))
+                printf("%02hhx", bytes->ob_sval[i]);
+                if (i == (size - 1))
                         printf("\n");
                 else
                         printf(" ");
