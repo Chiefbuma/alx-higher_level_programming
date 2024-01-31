@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-This is the addition module.
-it adds 2 integers
-a and b must be first casted
+a and b 
 """
 
 
