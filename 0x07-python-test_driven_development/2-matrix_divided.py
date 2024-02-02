@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
 This is the divide module.
-has a function to divide matrix
-Divide all elements of a matrix
 """
 
 
 def matrix_divided(matrix, div):
-    """matrix must be a list of lists of integers/floats
+    """matrix 
     Returns a new matrix
     """
     newmatrix = []
@@ -16,7 +14,7 @@ def matrix_divided(matrix, div):
     # Divides all elements of a matrix
     if isinstance(div, int) is False and isinstance(div, float) is False:
         raise TypeError('div must be a number')
-    # Matrix must be a list of integers or floats, TypeError
+    # Matrix , TypeError
     if type(matrix) is not list:
         raise TypeError('matrix must be a matrix (list of lists) '
                         'of integers/floats')
