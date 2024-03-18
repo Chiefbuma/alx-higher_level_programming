@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-""" Module appends to a text file
-"""
+"""Appending to a text file"""
 
 
 def append_write(filename="", text=""):
-    """ Function to a text file
+    """A functions that writes a string to a text file and returns the number
+     of characters written
 
     Args:
-        filename: filename
-        text: text to write
+        filename (str): The name of the file to append to.
+        text (str): The string to append to the file.
 
-    Raises
-        Exception: can be opened
+    Returns:
+        The number of characters appended.
 
     """
 
